@@ -1,0 +1,19 @@
+# Sample Config file for Windows Ruby Development Syncronizer Utility
+# to activate wrbsync for this project -- make copy from this file:
+#
+# $ cp .wrbsync.sample .wrbsync
+#
+# then edit variables, situable for your environment
+
+REMOTE_SSH_USERNAME=hedin
+REMOTE_SSH_HOST=localhost
+REMOTE_SSH_PORT=2222
+REMOTE_DIR_PATH="/home/hedin/urls"
+
+# relative path to exclude from syncronization
+# this variable can be not set
+declare -a UNISON_IGNORE_OPTIONS=("Path {.git}" "Path {tmp}" "Name .gitignore" "Path {html-layout}" "Path {.idea}" "Path {vendor/bundle/ruby/2.3.0/gems/.git}")
+
+
+
+

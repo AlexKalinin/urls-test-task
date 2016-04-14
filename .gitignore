@@ -1,0 +1,17 @@
+/.byebug_history
+/.bundle
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.dump.sql
+/db/*.schema.sql
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+public/assets/*
+/1c8/db/*
+!/1c8/db/.keep
+/public/system/*
+/.wrbsync
+/vendor/bundle
+config/database.yml
