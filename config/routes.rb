@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'main_page#index'
+
+  get 'testjs' => 'main_page#testjs'
+
+  scope 'api' do
+    resources :urls, only: [:index, :create]
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
