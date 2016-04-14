@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'testjs' => 'main_page#testjs'
 
-  scope 'api' do
+  scope 'api', defaults: {format: :json} do
     resources :urls, only: [:index, :create]
   end
 

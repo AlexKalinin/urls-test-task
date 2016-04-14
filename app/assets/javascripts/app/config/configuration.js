@@ -9,7 +9,11 @@ var Configuration = {
     ApiServerUrlPutAll: '/api/urls', //post
 
     //Syncronization timeout in milliseconds
-    ApiSyncTimeout: 15 * 1000
+    ApiSyncTimeout: 15 * 1000,
+
+
+    //Model change check timeout
+    CoreModelCnangeCheckTimeout: 300
 
 
 };

@@ -1,3 +1,14 @@
+describe("String.prototype.hashCode()", function(){
+    it('will be the same', function(){
+       expect(''.hashCode()).toBe(''.hashCode());
+       expect(" \n\r".hashCode()).toBe(" \n\r".hashCode());
+       expect("    ".hashCode()).toBe("    ".hashCode());
+       expect("ab cdefghijklmnopqrstuvwxyz01234 5678 9!@# $%^&*()_+".hashCode())
+           .toBe("ab cdefghijklmnopqrstuvwxyz01234 5678 9!@# $%^&*()_+".hashCode());
+    });
+});
+
+
 describe("String.isEmpty()", function(){
     it("will be empty", function(){
         expect(String.isEmpty("")).toBeTruthy();
