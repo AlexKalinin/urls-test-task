@@ -16,3 +16,15 @@ Simple todo-like test task.
 
 ### Preview
 ![preview](_preview/preview.png)
+
+
+### Ban domains:
+
+created functionality for ban some domains by regex:
+
+```ruby
+# on server
+# RAILS_ENV=production rails c
+
+BlackList.create url: "blockKeyword"
+```
