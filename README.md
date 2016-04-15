@@ -5,7 +5,9 @@ Simple todo-like test task.
 ### See demo here: [urls.alexkalinin.pro](http://urls.alexkalinin.pro/)
 
 ### See this project screencast on YouTube:
-![preview](_preview/GithubVideoPreview.png)
+<a href="https://www.youtube.com/watch?v=FwAvaRYmnAg&index=1&list=PL4Sb1Xi46uLW12ZcLEh5j7WDXNPQ_PYzn" target="_blank">
+   <img alt="see on youtube" src="_preview/GithubVideoPreview.png"/>
+</a>
 
 ### Used tools:
 * jquery
