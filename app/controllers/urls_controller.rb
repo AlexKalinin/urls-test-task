@@ -14,6 +14,10 @@ class UrlsController < ApplicationController
     if params[:urls]
       params[:urls].each do |u|
         url = Url.find_by(url: u)
+        if black_listed?(u)
+          url.destroy if url
+          next
+        end
         Url.create(url: u) unless url
       end
     end
@@ -21,6 +25,14 @@ class UrlsController < ApplicationController
 
 
   private
+    def black_listed?(url)
+      BlackList.all.each do |bl|
+        rgx = /#{bl.url}/ix
+        return true unless rgx.match(url).nil?
+      end
+      false
+    end
+
     def set_default_restponce_status
       @rsp_status = true
       @rsp_message = 'ok'
