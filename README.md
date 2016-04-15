@@ -18,9 +18,9 @@ Simple todo-like test task.
 ![preview](_preview/preview.png)
 
 
-### Ban domains:
+### Block domains:
 
-created functionality for ban some domains by regex:
+created functionality for black listing some domains by regex:
 
 ```ruby
 # on server
