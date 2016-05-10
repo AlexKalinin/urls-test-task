@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/repos/5731730271bcda1fe4005f60/badges/7cff06c8a6bb0de83215/gpa.svg)](https://codeclimate.com/repos/5731730271bcda1fe4005f60/feed)
+
 # urls-test-task
 
 Simple todo-like test task.
